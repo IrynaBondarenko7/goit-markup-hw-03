@@ -121,8 +121,6 @@ margin-right: 93px;
   background-color: var(--hero-bg-color);
   padding-top: 200px;
   padding-bottom: 280px;
-  max-width: 1600px;
-
 }
 .hero-title {
 font-weight: 900;
@@ -132,7 +130,8 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--white-color);
-margin-bottom: 30px;
+max-width: 696px;
+margin: 0 auto 30px;
 }
 
 .button{
@@ -152,6 +151,7 @@ text-align: center;
 letter-spacing: 0.06em;
 display: block;
 margin: 0 auto;
+border: transparent;
 }
 .button:focus, .button:hover {
   background: var(--button-hover);
@@ -159,7 +159,6 @@ margin: 0 auto;
 /*---------------------------------Section features--------------------------*/
 .features {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 .features-list{
   display: flex;
@@ -234,6 +233,7 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+padding-bottom: 30px;
 }
 /*-----------------------FOOTER------------------*/
 .log-white{
@@ -252,7 +252,8 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--white-color);
 text-decoration:none;
-margin-top: 20px;
+display: block;
+margin-bottom: 9px;
 }
 .address-map:hover, .address-map:focus{
   color: var(--accent-color);
@@ -264,20 +265,26 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--contacts-color);
 text-decoration:none;
-margin-top: 9px;
+display: block;
+}
+.address-mail {
+  margin-bottom: 9px;
 }
 .address-contacts:hover, .address-contacts:focus {
   color: var(--accent-color);
 }
 .footer-log{
   margin-right: 0;
+  display: block;
+  margin-bottom: 20px;
+
 }
 
 /*-----------PORTFOLIO PAGE--------------*/
 .portfolio {
   background-color: var(--white-color);
-  margin-top: 94px;
-  margin-bottom:94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio-list{
   display: flex;
@@ -308,6 +315,7 @@ color: var(--title-color);
 background: var(--portfolio-button-color);
 border-radius: 4px;
 border: transparent;
+padding: 6px 22px;
 }
 .button-portfolio:hover, .button-portfolio:focus {
   color: var(--white-color);
@@ -319,8 +327,8 @@ border: transparent;
   gap: 30px;
 }
 .projects-item{
-  width: calc((100% - 60px)/3);
-  border-bottom: 1px solid var(--border-colour);
+  width: calc((100% - 60px) /3);
+  
 }
 .projects-title {
 font-weight: 700;
@@ -337,10 +345,11 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--text-color);
 }
-.projects-box {
+.projects-link {
   text-decoration:none;
 }
-.projects-img{
-  margin-bottom: 20px;
-
+.projects-box{
+  padding: 20px 24px;
+  border: 1px solid var(--border-colour);
+  border-top: 0;
 }
