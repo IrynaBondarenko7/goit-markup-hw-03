@@ -250,8 +250,8 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address-item {
-  padding-bottom: 9px;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-map {
   font-weight: 400;
@@ -275,7 +275,6 @@ img {
   text-decoration: none;
   display: block;
 }
-
 .address-contacts:hover,
 .address-contacts:focus {
   color: var(--accent-color);
